@@ -23,7 +23,7 @@ data "aws_ami" "ftdv" {
 
 // Cisco NGFW Instances //
 data "template_file" "startup_file" {
-  template = file("${path.root}/startup_file.json")
+  template = file("${path.module}/startup_file.json")
   vars = {
     ftd_pass = var.ftd_pass
     lab_id = var.lab_id
