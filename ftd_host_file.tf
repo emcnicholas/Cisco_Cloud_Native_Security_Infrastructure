@@ -24,5 +24,5 @@ resource "local_file" "host_file" {
           eks_inside_ip: ${data.aws_instance.eks_node_instance.private_ip}
           eks_outside_ip: ${aws_eip_association.eks_outside_ip_association.private_ip_address}
     EOT
-    filename = "${path.root}/Ansible/hosts.yaml"
+    filename = "${path.module}/Ansible/hosts.yaml"
 }
