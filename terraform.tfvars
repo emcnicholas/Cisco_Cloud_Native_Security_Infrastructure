@@ -5,7 +5,6 @@ aws_access_key     = ""
 aws_secret_key     = ""
 lab_id             = "" // Lab ID (can be anything, but needs to be unique
 remote_hosts       = ["10.10.10.10", "172.16.12.12"] //Remote hosts that will have access to environment
-vpc_name           = ""
 region             = ""
 aws_az1            = ""
 aws_az2            = ""
