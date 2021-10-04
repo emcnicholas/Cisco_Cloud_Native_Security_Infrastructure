@@ -17,10 +17,7 @@ output "eks_cluster_name" {
   value = "${var.vpc_name}_${var.lab_id}"
 }
 
-
-//data "template_file" "jenkinsfile" {
-//  template = file("${path.root}/../Jenkinsfile")
-//  vars = {
-//    eks_public_ip = aws_eip.eks_outside_EIP.public_ip
-//  }
-//}
+// EKS Cluster API Endpoint
+output "eks_cluster_api_endpoint" {
+  value = aws_eks_cluster.eks_cluster.endpoint
+}
